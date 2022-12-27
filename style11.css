@@ -1,0 +1,60 @@
+.square{
+	width: 100px;
+	height: 100px;
+	background-color:blue;
+	animation-name: changeC;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+
+}
+
+
+
+span{
+	font-weight:bold;
+	display: inline-block;
+	animation: fliping 1s infinite;
+	animation-delay: calc(0.1s * var(--i));
+}
+@keyframes changeC {
+	0% {background-color: blue;}
+	25% {background-color: orange;}
+	50% {background-color: green;}
+	75% {background-color: black;}
+	100% {background-color: red;}
+}
+
+@keyframes textAnm{
+	0%{
+		transform: translateY(0);
+	}
+
+	60%{
+		transform: translateY(5px);
+	}
+}
+@keyframes fliping{
+	0%{
+		transform: rotateX(360deg);
+	}
+
+	60%{
+		transform: rotateX(360deg);
+	}
+}
+button{
+	padding-left:20px;
+	padding-right:20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: green;
+	border: green;
+	border-radius: 30 px;
+}
+button:hover{
+	background-color: lightgreen;
+}
+
+.btn-myblue{
+	--bs-btn-bg: rgb(90, 92, 234);
+}
